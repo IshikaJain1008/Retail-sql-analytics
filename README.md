@@ -1,81 +1,226 @@
-# 📊 SQL Data Analysis Project – Zepto Dataset
+# 🛒 Retail SQL Analytics
 
-**Overview:**
+> **Business Analytics | Pricing Strategy | Inventory Management | PostgreSQL**
 
-This repository contains a collection of SQL queries written in PostgreSQL to analyze a product-level dataset.
-The purpose of this project is to demonstrate practical SQL skills used in real-world data analytics, including filtering, aggregation, grouping, and insight generation.
+---
 
-**Dataset:**
+# Executive Summary
 
-Dataset name: Zepto Product Dataset
+Retail businesses generate vast amounts of product data, but transforming that data into actionable business insights requires structured analysis. This project demonstrates how SQL can be used to solve real-world retail business problems by analyzing product pricing, discount strategies, inventory availability, and category performance.
 
-Format: CSV
+Using PostgreSQL, the project explores a retail product dataset to answer business-driven questions that support merchandising, pricing optimization, and inventory planning. Rather than focusing solely on SQL syntax, the analysis emphasizes how SQL enables data-driven decision-making in a retail environment.
 
-Granularity: Product-level data
+---
 
-**Key attributes include:**
+# Business Context
 
-1.Product category and name
+Retail organizations continuously balance product pricing, promotional discounts, and inventory availability while maintaining profitability.
 
-2.Pricing (MRP, discounted price, discount %)
+Understanding which products drive revenue, how discounts influence pricing strategies, and where inventory gaps exist helps business stakeholders make informed operational and merchandising decisions.
 
-3.Stock availability and quantity
+---
 
-4.Product weight
+# Business Problem
 
-The dataset was first cleaned and prepared before being queried in PostgreSQL.
+The business requires a structured analytical solution to answer questions such as:
 
-**Tools Used:**
+- Which products provide the highest customer value?
+- Which premium products are currently unavailable?
+- Which categories contribute the most estimated revenue?
+- How effective are current discount strategies?
+- How can inventory be better managed using product-level insights?
 
-1.PostgreSQL – Query execution and analysis
+---
 
-2.SQL – Data extraction and insight generation
+# Project Objectives
 
-**Analysis Covered:**
+The project aims to:
 
-The SQL queries in this file focus on:
+- Analyze retail product pricing.
+- Evaluate discount strategies.
+- Monitor inventory availability.
+- Compare product category performance.
+- Estimate category-level revenue.
+- Generate business insights using SQL.
 
-1.Category-wise product analysis
+---
 
-2.Price and discount-based insights
+# Dataset Overview
 
-3.Stock availability and out-of-stock analysis
+The project uses a product-level retail dataset containing information about:
 
-4.ggregations using GROUP BY
+- Product Name
+- Category
+- Maximum Retail Price (MRP)
+- Discounted Selling Price
+- Discount Percentage
+- Available Quantity
+- Product Weight
+- Stock Availability
 
-5.Filtering using WHERE and HAVING clauses
+Before analysis, the dataset was cleaned and standardized to ensure reliable reporting.
 
-6.Sorting and ranking results for better interpretation
+---
 
-7..These queries are designed to answer business-relevant questions and simulate real analytics use cases.
+# Data Preparation
 
-**File Description**
+To improve data quality before analysis:
 
-File Name	Description:
+- Removed products with invalid pricing (MRP = 0).
+- Converted price values from paise to rupees.
+- Validated product records.
+- Reviewed category consistency.
+- Prepared the dataset for SQL-based business analysis.
 
-Zepto_Data_SQL_Analysis.sql	Contains all SQL queries used for data analysis
+---
 
-**How to Use:**
+# Business Questions Answered
 
-1.Create a table in PostgreSQL using the dataset schema
+| Business Area | Business Question |
+|---------------|-------------------|
+| Pricing Strategy | Which products offer the highest discounts? |
+| Inventory Management | Which premium products are currently out of stock? |
+| Revenue Analysis | Which product categories generate the highest estimated revenue? |
+| Pricing Strategy | Which premium products receive minimal discounts? |
+| Pricing Analysis | Which categories provide the highest average discount? |
+| Product Optimization | Which products offer the best value based on price per gram? |
+| Product Segmentation | How can products be grouped by package size? |
+| Inventory Planning | Which categories contribute the highest inventory weight? |
 
-2.Load the CSV data into the table
+---
 
-3.Open Zepto_Data_SQL_Analysis.sql in pgAdmin or any SQL editor
+# SQL Concepts Demonstrated
 
-4.Run queries sequentially to explore insights
+The project demonstrates practical SQL techniques including:
 
-**Learning Outcome:**
+- Data Cleaning
+- Filtering
+- Aggregation
+- CASE Statements
+- GROUP BY
+- HAVING
+- ORDER BY
+- Aggregate Functions
+- Business Metric Calculation
 
-This project helped strengthen my understanding of:
+---
 
-1.Writing clean and readable SQL queries
+# Key Business Insights
 
-2.Applying SQL for analytical problem-solving
+The SQL analysis provides insights into:
 
-3.Extracting insights from structured datasets
-4.It reflects my preparation for entry-level Data Analyst roles.
+- High-discount products suitable for promotional campaigns.
+- Premium products currently unavailable in inventory.
+- Product categories with the highest estimated revenue.
+- Categories offering the largest average discounts.
+- Products delivering the best value based on price per gram.
+- Inventory distribution across retail categories.
+- Product segmentation based on package size.
 
-**Notes:**
-1.Queries are written specifically for PostgreSQL syntax
-2.Column names follow snake_case conventions
+---
+
+# Business Decisions Supported
+
+The analysis supports several retail business decisions.
+
+| Analysis | Business Value |
+|----------|----------------|
+| Highest Discount Products | Improve promotional planning |
+| Premium Out-of-Stock Products | Prioritize inventory replenishment |
+| Category Revenue Analysis | Allocate marketing resources effectively |
+| Average Discount Analysis | Optimize pricing strategy |
+| Price per Gram Analysis | Benchmark product value |
+| Product Segmentation | Improve merchandising decisions |
+| Inventory Weight Analysis | Support warehouse and inventory planning |
+
+---
+
+# Business Impact
+
+This project demonstrates how SQL can help retail organizations:
+
+- Improve pricing decisions.
+- Optimize inventory management.
+- Identify high-performing product categories.
+- Support merchandising strategies.
+- Enable data-driven decision-making.
+
+---
+
+# Tools & Technologies
+
+### Database
+
+- PostgreSQL
+
+### Query Language
+
+- SQL
+
+### Concepts
+
+- Data Cleaning
+- Aggregation
+- Filtering
+- Business Analytics
+
+---
+
+# Skills Demonstrated
+
+## Business Analysis
+
+- Pricing Strategy Analysis
+- Inventory Analytics
+- Revenue Analysis
+- Business Question Formulation
+
+## SQL
+
+- Data Cleaning
+- GROUP BY
+- HAVING
+- CASE
+- Aggregate Functions
+- Filtering
+- Business Queries
+
+## Retail Analytics
+
+- Pricing Optimization
+- Inventory Planning
+- Category Performance Analysis
+- Product Segmentation
+
+---
+
+# How to Run
+
+1. Import the dataset into PostgreSQL.
+2. Create the required table.
+3. Execute the SQL script.
+4. Review the generated query results.
+
+---
+
+# Future Enhancements
+
+- Sales trend analysis
+- Customer segmentation
+- Interactive Power BI dashboard
+- Advanced SQL using Window Functions
+- Automated reporting
+
+---
+
+# Author
+
+**Ishika Jain**
+
+Aspiring Data Analyst | Business Analyst | BI Analyst
+
+**Skills:** SQL • PostgreSQL • Python • Power BI • Excel
+
+📧 iishikajain1008@gmail.com
+
+🔗 www.linkedin.com/in/ishika-jain1008
